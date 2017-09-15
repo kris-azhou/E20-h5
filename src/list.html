@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>搜一下，就购了--告别选择困难症</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.css">
+		<link rel="stylesheet" href="css/style.css">
+		<style type="text/css">
+			#list {
+				/*避免导航边框和列表背景边框重叠，看起来像两条边框似得；*/
+				
+				margin-top: -1px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">搜一下，就购了</h1>
+		</header>
+		<div class="mui-content">
+			<div id="list">
+				<form id="check" class="mui-input-group mt10 f16">
+								<div class="mui-input-row">
+									<label>角色：</label>
+									<select name="">
+										<option value="">傲娇大学生</option>
+										<option value="">奋斗中学生</option>
+										<option value="">挖坑小学生</option>
+										<option value="">月光族白领</option>
+										<option value="">有存款白领</option>
+										<option value="">无压力白领</option>
+										<option value="">工薪家庭型</option>
+										<option value="">小资家庭型</option>
+										<option value="">中产家庭型</option>
+										<option value="">人生赢家型</option>
+									</select>
+								</div>
+								<div class="mui-input-row">
+									<label>定位：</label>
+									<select name="">
+										<option value="">男青年</option>
+										<option value="">女青年</option>
+										<option value="">为他买</option>
+										<option value="">给她购</option>
+									</select>
+								</div>
+								<div class="mui-input-row">
+									<label>需求：</label>
+									<input type="text" placeholder="说说你想买什么" value=""/>
+								</div>
+								<div class="mui-input-row">
+									<label>价位：</label>
+									<input type="text" placeholder="定义你的预算" value=""/>
+								</div>
+								<div class="mui-input-row">
+									<label>要求：</label>
+									<textarea rows="3" cols="30" placeholder="还有啥特殊要求"></textarea>
+								</div>
+								<div class="mui-button-row">
+									<button class="mui-btn mui-btn-primary" id="ok" onclick="return false;">确认</button>&nbsp;&nbsp;
+									<button class="mui-btn mui-btn-primary" id="en" onclick="return false;">取消</button>
+								</div>
+				</form>	
+				<!--表单选择项-->
+				<div class="mui-table-view" id="checklist" style="display: none;">
+					<li class="mui-table-view-cell">
+						<p>经过神算子程序猿搜索大数据得出<span style="color: red;">50%(1289位)挖坑小学生</span>购买了<span style="color: darkcyan;">天猫</span>的价格2500元的超极本</p>						
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#">
+						<img class="mui-media-object mui-pull-left" src="http://dcloudio.github.io/mui/assets/img/shuijiao.jpg">
+						<div class="mui-media-body">
+							超极本，超爆款，超低价，2500！
+							<p class='mui-ellipsis'>绝杀Lol,虐暴小学生，五杀，成神，最强王者！</p>
+						</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#">
+						<img class="mui-media-object mui-pull-left" src="http://dcloudio.github.io/mui/assets/img/shuijiao.jpg">
+						<div class="mui-media-body">
+							超极本，超爆款，超低价，2500！
+							<p class='mui-ellipsis'>绝杀Lol,虐暴小学生，五杀，成神，最强王者！</p>
+						</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#">
+						<img class="mui-media-object mui-pull-left" src="http://dcloudio.github.io/mui/assets/img/shuijiao.jpg">
+						<div class="mui-media-body">
+							超极本，超爆款，超低价，2500！
+							<p class='mui-ellipsis'>绝杀Lol,虐暴小学生，五杀，成神，最强王者！</p>
+						</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<p>经过神算子程序猿搜索大数据得出<span style="color: red;">50%(1289位)挖坑小学生</span>购买了<span style="color: darkcyan;">天猫</span>的价格2500元的超极本</p>						
+					</li>					<li class="mui-table-view-cell mui-media">
+						<a href="#">
+						<img class="mui-media-object mui-pull-left" src="http://dcloudio.github.io/mui/assets/img/shuijiao.jpg">
+						<div class="mui-media-body">
+							超极本，超爆款，超低价，2500！
+							<p class='mui-ellipsis'>绝杀Lol,虐暴小学生，五杀，成神，最强王者！</p>
+						</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#">
+						<img class="mui-media-object mui-pull-left" src="http://dcloudio.github.io/mui/assets/img/shuijiao.jpg">
+						<div class="mui-media-body">
+							超极本，超爆款，超低价，2500！
+							<p class='mui-ellipsis'>绝杀Lol,虐暴小学生，五杀，成神，最强王者！</p>
+						</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#">
+						<img class="mui-media-object mui-pull-left" src="http://dcloudio.github.io/mui/assets/img/shuijiao.jpg">
+						<div class="mui-media-body">
+							超极本，超爆款，超低价，2500！
+							<p class='mui-ellipsis'>绝杀Lol,虐暴小学生，五杀，成神，最强王者！</p>
+						</div>
+						</a>
+					</li>
+				</div>
+				<div class="mui-loading" style="display: none;">
+					<div class="mui-spinner">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#ok').click(function(){
+					$('#checklist').show();
+				});
+				$('#en').click(function(){
+					$('#checklist').hide();
+				});
+			});
+		</script>
+	</body>
+
+</html>
