@@ -6,9 +6,10 @@
 touch版的只有项目demo，没有模板可供使用。
 
 scroll版提供模板。
-+
-+
+
 gulp 目录是配置好的gulp环境
+
+使用npm install下载依赖包
 
 针对常规页面的开发，可以一键使用。
 
