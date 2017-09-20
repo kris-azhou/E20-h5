@@ -1,0 +1,60 @@
+@charset "utf-8";
+/*页面属性*/
+body{font-family: "微软雅黑"; background-color: #061834; -webkit-user-select:none;-webkit-touch-callout:none;}
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div ,dl,dd,em,i{margin:0; padding:0; border:0; font-weight: normal; font-style: normal;}
+input{outline: none; font-family: "微软雅黑"}
+input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;appearance:none;-webkit-tap-highlight-color:rgba(0,0,0,0);border-radius:0;}
+textarea {-webkit-appearance: none;}   
+/*页面属性*/
+.hide{display: none}
+.show{display: block;}
+.wp{position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; z-index: 99;}
+.page{width: 100%; height: 100%; position: relative;}
+.page img{position: absolute;}
+.page1{width: 100%; height: 100%; position: relative;}
+.page1 img{position: absolute;}
+/*加载样式*/
+.mp_loading{position: absolute;width: 100%;height: 100%;background-color: #021a33;left: 0;top: 0;z-index: 999; text-align: center;}
+.mp_loading img{ width: 60%; margin-top:40%;  }
+.mp_loading p{color: #d2d2d2; margin-top: 5px; text-align: center;}
+.spinner{margin: -30px 0 0 -30px; top: 50%; left: 50%; width: 60px; height: 60px; position: relative;}
+.container1 > div, .container2 > div, .container3 > div{width: 15px; height: 15px; background-color: #fff; border-radius: 100%; position: absolute; -webkit-animation: bouncedelay 1.2s infinite ease-in-out; animation: bouncedelay 1.2s infinite ease-in-out; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
+.spinner .spinner-container{position: absolute; width: 100%; height: 100%;}
+.container2{-webkit-transform: rotateZ(45deg); transform: rotateZ(45deg);}
+.container3{-webkit-transform: rotateZ(90deg); transform: rotateZ(90deg);}
+.circle1{top: 0; left: 0;}
+.circle2{top: 0; right: 0;}
+.circle3{right: 0; bottom: 0;}
+.circle4{left: 0; bottom: 0;}
+.container2 .circle1{-webkit-animation-delay: -1.1s; animation-delay: -1.1s;}
+.container3 .circle1{-webkit-animation-delay: -1.0s; animation-delay: -1.0s;}
+.container1 .circle2{-webkit-animation-delay: -0.9s; animation-delay: -0.9s;}
+.container2 .circle2{-webkit-animation-delay: -0.8s; animation-delay: -0.8s;}
+.container3 .circle2{-webkit-animation-delay: -0.7s; animation-delay: -0.7s;}
+.container1 .circle3{-webkit-animation-delay: -0.6s; animation-delay: -0.6s;}
+.container2 .circle3{-webkit-animation-delay: -0.5s; animation-delay: -0.5s;}
+.container3 .circle3{-webkit-animation-delay: -0.4s; animation-delay: -0.4s;}
+.container1 .circle4{-webkit-animation-delay: -0.3s; animation-delay: -0.3s;}
+.container2 .circle4{-webkit-animation-delay: -0.2s; animation-delay: -0.2s;}
+.container3 .circle4{-webkit-animation-delay: -0.1s; animation-delay: -0.1s;}
+/*箭头样式*/
+.arrow{position: fixed;bottom: 1%; width: 100%; text-align: center; z-index: 150;-webkit-animation: moveIconUp 2s ease infinite;animation: moveIconUp 2s ease infinite;}
+/*框架样式*/
+.fullPage-wp{-webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0);}
+.fullPage-wp:after{display: block; content: ' '; height: 0; clear: both;}
+.fullPage-wp.anim{-webkit-transition: all 500ms ease-out 0s; transition: all 500ms ease-out 0s;}
+.fullPage-page{display: block; overflow: hidden;}
+.fullPage-dir-h{float: left;}
+/*音乐样式*/
+.music{position: absolute;z-index: 99;right: 0px;top: 0px;padding: 10px;width: 25px;height: 25px;}
+.music .music-btn{display: block;padding-left: 1px;width: 25px;height: 25px;background-image: url(../images/music_on.png);background-size: 100% 100%;}
+/*自定义样式*/
+.p1{background: #dcdcdc; text-align: center; color: red;}
+.p2{background: blue; text-align: center; color: #ffffff;}
+/* 兼容写法 */
+@media only screen and (max-height: 480px) {
+    
+}
+@media only screen and (min-width: 375px) and (max-width: 435px){
+    
+}
