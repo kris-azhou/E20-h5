@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>H5</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/magic.css">
+    <link rel="stylesheet" href="css/effect.css">
+    <!-- 动画样式 -->
+    <link rel="stylesheet" href="css/layer.css">
+    <!-- 弹出框样式 -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- 自定义布局样式 -->
+</head>
+
+<body>
+    <div id="loading" class="mp_loading">
+        <img src="images/loading.svg">
+        <p>加载中</p>
+    </div>
+    <!--页面加载-->
+    <div class="wp">
+        <div class="wp-inner ">
+             <div class="page p1">
+                <p class="js-animate" data-animate="animated fadeInDown ">第一屏</p>
+            </div>
+            <!-- 每屏定义方法  动画自行编写 已加载三个动画库-->
+            <div class="page p2">
+                <p class="js-animate" data-animate="a-flutter-1">第二屏</p>
+            </div>
+            <!-- 每屏定义方法 动画自行编写 已加载三个动画库-->
+        </div>
+        <div class="arrow">
+            <img src="images/arrow.png" width="40">
+        </div>
+        <!-- 向上按钮 -->
+        <div class="music">
+            <div class="music-btn">
+                <audio id="music"  preload src="media/bg.mp3" loop></audio>
+            </div>
+        </div>
+        <!-- 音乐按钮 默认是不播放 如需默认播放  music-btn 后增加 rotate 即可 依赖wx api js-->
+    </div>
+    <!-- 主体区域 -->
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/zepto.fullpage.js"></script>
+    <script type="text/javascript" src="js/audio.js"></script>
+    <script type="text/javascript" src="js/layer.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- 加载js库 -->
+</body>
+
+</html>
