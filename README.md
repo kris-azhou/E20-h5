@@ -20,3 +20,11 @@ gulp 目录是配置好的gulp环境
 ps:保证电脑和手机处于一个局域网，连接同一个无线网。
 
 个别手机有访问不了的情况，可尝试电脑链接网线或者无线网，使用360wifi进行本电脑分发wifi，手机使用此wifi
+
+1.npm install 下载依赖包
+
+2.gulp dev 进入开发模式
+
+3.gulp build 打包
+
+4.在gulpfile.js文件里注释了一段upload的上线配置，打开注释 可以直接上传ftp文件目录，假设用ftp的话。
