@@ -184,9 +184,9 @@ gulp.task('html', function () {
 gulp.task('upload', function () {
   return gulp.src('dist/2017/wx/**')
   .pipe(ftp({
-    host: '115.29.195.74',  // 远程主机ip
-    user: 'wuzhaozhou',  // 帐号
-    pass: 'F9sqZeulPQLHK8ja',  // 密码
+    host: '127.0.0.1',  // 远程主机ip
+    user: 'admin',  // 帐号
+    pass: 'admin',  // 密码
     remotePath: '/meeting/2016/2017/train'  // 上传路径，不存在则新建
   }))
   .pipe(gutil.noop())
